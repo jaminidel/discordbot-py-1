@@ -57,6 +57,6 @@ async def 버튼(ctx):
 
 
 try:
-    client.run(TOKEN)
+    bot.run(TOKEN)
 except discord.errors.LoginFailure as e:
     print("Improper token has been passed.")
