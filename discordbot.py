@@ -4,8 +4,6 @@ import discord
 from dotenv import load_dotenv
 import os
 load_dotenv()
-
-import discord
 from discord.ui import Button, View
 from discord.ext import commands
 
