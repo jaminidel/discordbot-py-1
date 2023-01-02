@@ -4,7 +4,6 @@ import discord
 from dotenv import load_dotenv
 import os
 load_dotenv()
-from discord.ui import Button, View
 from discord.ext import commands
 
 PREFIX = os.environ['PREFIX']
@@ -17,10 +16,7 @@ bot = commands.Bot(command_prefix='PREFIX',intents = discord.Intents.all())
 async def on_ready():
     print("준비 완료!")
     await bot.change_presence(status=discord.Status.online, activity=discord.Game("!도움을 눌러 대화를 시작해 주세요!"))
-@bot.command(name="777안내")
-async def on_message(ctx):
-    ch1 = bot.get_channel(1059028354113744937)
-    await ch1.send("관리자 봇을 사용하려면 채팅창에 !도움을 쳐주세요")
+
 @bot.command(name="도움")
 async def 버튼(ctx):
     button1 = Button(label="거래", style = discord.ButtonStyle.green)
