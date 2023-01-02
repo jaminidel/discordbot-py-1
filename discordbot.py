@@ -7,10 +7,9 @@ load_dotenv()
 from discord.ui import Button, View
 from discord.ext import commands
 
-PREFIX = os.environ['PREFIX']
 TOKEN = os.environ['TOKEN']
 
-bot = commands.Bot(command_prefix='PREFIX',intents = discord.Intents.all())
+bot = commands.Bot(command_prefix='!',intents = discord.Intents.all())
 
 
 @bot.event
