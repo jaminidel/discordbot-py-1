@@ -58,10 +58,11 @@ async def 버튼1(ctx):
         await ctx.author.send(embed = discord.Embed(title='도움받기',description=f"{ctx.message.author.name}님 도움을 받으시려면 !도움을 입력해주세요", color=0xf9ff84))
         print(f"{ctx.message.author.name}님이 도움 버튼을 눌렀습니다")
     
+    button5.callback = button_callback5
     
-    
-    
-    
+    view = View()
+    view.add_item(button5)
+    await ctx.author.send(embed = discord.Embed(title='제가 필요 하시나요?',description="제가 도와 드릴까요? 밑에 있는 도움 버튼을 눌러 주세요!", color=0xf9ff84), view=view)
 try:
     bot.run(TOKEN)
 except discord.errors.LoginFailure as e:
