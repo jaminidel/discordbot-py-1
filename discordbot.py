@@ -53,7 +53,7 @@ async def 버튼(ctx):
     await ctx.author.send(embed = discord.Embed(title='도움이 필요하신가요?',description=f"{ctx.message.author.name}님 어떻게 도와드릴까요? 밑에 버튼을 클릭하면 도와드릴 수 있어요!", color=0xf9ff84), view=view)
 @bot.command(name="777도움")
 async def 버튼(ctx):
-    ch1 = bot.get_channel(994941257916887121)
+    ch1 = bot.get_channel(1059028354113744937)
     button5 = Button(label="도움", style = discord.ButtonStyle.green)
     async def button_callback1(interaction):
         await ctx.author.send(embed = discord.Embed(title='도움받기',description=f"{ctx.message.author.name}님 도움을 받으시려면 !도움을 입력해주세요", color=0xf9ff84))
