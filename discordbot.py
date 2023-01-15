@@ -51,7 +51,7 @@ async def 버튼(ctx):
     view.add_item(button3)
     view.add_item(button4)
     await ctx.author.send(embed = discord.Embed(title='도움이 필요하신가요?',description=f"{ctx.message.author.name}님 어떻게 도와드릴까요? 밑에 버튼을 클릭하면 도와드릴 수 있어요!", color=0xf9ff84), view=view)
-    @bot.command(name="777도움")
+@bot.command(name="777도움")
 async def 버튼(ctx):
     button5 = Button(label="도움", style = discord.ButtonStyle.green)
     async def button_callback1(interaction):
